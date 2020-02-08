@@ -99,6 +99,14 @@ body {
   color: rgba(0,0,0,.6);
 }
 
+.linkedin:hover, .twitter:hover {
+  color: rgba(59, 144, 255,.8);
+}
+
+.insta:hover {
+  color: rgba(214, 51, 255,.8);
+}
+
 @media screen and (min-width: 768px){
   
   .profile-img, .profile-name, .profile-info {
