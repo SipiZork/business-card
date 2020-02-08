@@ -87,6 +87,22 @@ body {
   font-size: 3rem;
 }
 
+@media screen and (min-width: 768px){
+  
+  .profile-img, .profile-name, .profile-info {
+    left: -29.5vw;
+  }
+  
+  .content {
+    margin-top: -10rem;
+  }
+  
+  .links {
+    margin-top: 20rem;
+  }
+  
+}
+
 @media screen and (min-width: 768px) and (min-height: 768px){
   
   body{
@@ -97,24 +113,12 @@ body {
   }
   
   .wrapper {
-    height: 690px;
-  }
-  
-  .profile-img, .profile-name, .profile-info {
-    left: -29.5vw;
-  }
-  
-  .content {
-    margin-top: -10rem;
+    height: 650px;
   }
   
   .scrollable {
     overflow-y: scroll;
-    height: 650px;
-  }
-  
-  .links {
-    margin-top: 20rem;
+    height: 610px;
   }
   
   .scrollable::-webkit-scrollbar {
