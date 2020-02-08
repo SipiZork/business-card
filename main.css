@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(255, 132, 0, .7);
+}
+
+.wrapper{
+  width: 90vw;
+  border: 1px solid red;
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.profile-img {
+  position: relative;
+  top: -3.5rem;
+}
+
+.profile-img img {
+  border-radius: 10rem;
+  border: 1px solid red;
+  width: 100px;
+  filter: sepia(0%);
+  filter: grayscale(100%);
+  transition: filter .25s ease-in-out;
+}
+
+.profile-img img:hover {
+  filter: grayscale(0%);
+}
+
