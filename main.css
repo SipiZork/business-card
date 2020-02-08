@@ -5,26 +5,32 @@
 }
 
 body {
-  background-color: rgba(255, 132, 0, .7);
+  /*background-color: rgba(255, 132, 0, .7);*/
+  background: url('assets/bg1.jpeg') no-repeat center center fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
 
 .wrapper{
   width: 90vw;
-  border: 1px solid red;
   margin: 5rem auto;
   text-align: center;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 20px rgba(0,0,0,.8);
+  background-color: rgba(255,255,255,.7);
+  padding: .5rem;
 }
 
 .profile-img {
   position: relative;
-  top: -3.5rem;
+  top: -3rem;
 }
 
 .profile-img img {
   border-radius: 10rem;
-  border: 1px solid red;
-  width: 100px;
-  filter: sepia(0%);
+  border: 1px solid rgba(0,0,0,.6);
+  width: 80px;
   filter: grayscale(100%);
   transition: filter .25s ease-in-out;
 }
@@ -33,3 +39,42 @@ body {
   filter: grayscale(0%);
 }
 
+
+.profile-name {
+  margin-top: -4rem;
+}
+
+.profile-name h1 {
+  font-size: 1rem;
+  line-height: 3rem;
+}
+
+.profile-info {
+  
+}
+
+.profile-info h2, .profile-info span, .profile-info p {
+  font-size: .7rem;
+  line-height: 0;
+}
+
+.content {
+  padding-top: 2rem;
+}
+
+.content p {
+  margin: 0 .5rem 2rem;
+  text-align: justify;
+  background-color: rgba(255,255,255,.5);
+  border-radius: 0 0 .5rem .5rem;
+  padding: 1rem 1rem;
+}
+
+.content h2 {
+  font-size: 1.5rem;
+  background-color: rgba(0,0,0,.6);
+  line-height: 2.5rem;
+  height: 2.5rem;
+  border-radius: .5rem;
+  color: rgba(255,255,255,.8);
+}
