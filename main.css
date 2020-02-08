@@ -9,7 +9,7 @@ body {
   background: url('assets/bg1.jpeg') no-repeat center center fixed;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
 }
 
 .wrapper{
@@ -20,6 +20,7 @@ body {
   box-shadow: 10px 10px 20px rgba(0,0,0,.8);
   background-color: rgba(255,255,255,.7);
   padding: .5rem;
+  max-width: 1200px;
 }
 
 .profile-img {
@@ -41,21 +42,22 @@ body {
 
 
 .profile-name {
+  position: relative;
   margin-top: -5rem;
 }
 
 .profile-name h1 {
-  font-size: 2.5rem;
-  line-height: 4.5rem;
+  font-size: 2rem;
+  line-height: 3.5rem;
 }
 
 .profile-info {
-  
+  position: relative;
 }
 
 .profile-info h2, .profile-info span, .profile-info p {
-  font-size: 1.5rem;
-  line-height: 1rem;
+  font-size: 1.25rem;
+  line-height: 0rem;
 }
 
 .content {
@@ -68,19 +70,70 @@ body {
   background-color: rgba(255,255,255,.7);
   border-radius: 0 0 .5rem .5rem;
   padding: 1rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .content h2 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   background-color: rgba(0,0,0,.8);
-  line-height: 3.5rem;
-  height: 3.5rem;
+  line-height: 3rem;
+  height: 3rem;
   border-radius: .5rem;
   color: rgba(255,255,255,.8);
 }
 
 .links {
-  font-size: 4rem;
+  font-size: 3rem;
 }
+
+@media screen and (min-width: 768px) and (min-height: 768px){
+  
+  .wrapper {
+    height: 690px;
+  }
+  
+  .profile-img, .profile-name, .profile-info {
+    left: -29.5vw;
+  }
+  
+  .content {
+    margin-top: -10rem;
+  }
+  
+  .scrollable {
+    overflow-y: scroll;
+    height: 650px;
+  }
+  
+  .links {
+    margin-top: 20rem;
+  }
+  
+  .scrollable::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+  .scrollable::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+  .scrollable::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+  .scrollable::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+  
+}
+  
+  @media screen and (min-width: 1330px){
+    
+    .profile-img, .profile-name, .profile-info {
+      left: -24.5rem
+    }
+    
+  }
