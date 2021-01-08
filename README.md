@@ -8,4 +8,4 @@ Single responsive introductory page with image, social contacts, and short descr
  - Bootstrap
 
 ### Live version
-[Business Card](https://siposmark.com)
+[Business Card](https://sipizork.github.io/business-card/)
